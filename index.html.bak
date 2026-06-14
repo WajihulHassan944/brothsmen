@@ -84,7 +84,7 @@ position: sticky !important;
                                 </div>
                                 <div class="hero-pack-group hero-pack-group--two">
                                     <img class="hero-pack hero-pack--ramen"  src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-chicken-ramen.png" loading="eager" alt="Spicy Creamy Chicken Ramen pack" />
-                                    <img class="hero-pack hero-pack--ramen" style="height:247px !important;" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-mushroom-ramen.png" loading="eager" alt="Spicy Creamy Mushroom Ramen pack" />
+                                    <img class="hero-pack hero-pack--ramen" style="height:249px !important;" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-mushroom-ramen.png" loading="eager" alt="Spicy Creamy Mushroom Ramen pack" />
                                 </div>
                             </div>
                         </div>
