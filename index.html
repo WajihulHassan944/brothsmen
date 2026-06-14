@@ -73,7 +73,7 @@ position: sticky !important;
                                 </div>
                                 <div class="hero-pack-group hero-pack-group--three">
                                     <img class="hero-pack hero-pack--soup" src="newImgClientShared/hero-packs/hero-pack-classic-chicken-soup.png" loading="eager" alt="Classic Chicken Soup pack" />
-                                    <img class="hero-pack hero-pack--center" src="newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png" loading="eager" alt="Tomato and Basil Soup pack" />
+                                    <img class="hero-pack hero-pack--center" id="hero-packo" src="newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png" loading="eager" alt="Tomato and Basil Soup pack" />
                                     <img class="hero-pack hero-pack--soup" src="newImgClientShared/hero-packs/hero-pack-creamy-mushroom-soup.png" loading="eager" alt="Creamy Mushroom Soup pack" />
                                 </div>
                             </div>
@@ -83,8 +83,8 @@ position: sticky !important;
                                     <div class="hero-category-label"><span class="hero-category-line"></span><span>Ramen</span><span class="hero-category-line"></span></div>
                                 </div>
                                 <div class="hero-pack-group hero-pack-group--two">
-                                    <img class="hero-pack hero-pack--ramen"  src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-chicken-ramen.png" loading="eager" alt="Spicy Creamy Chicken Ramen pack" />
-                                    <img class="hero-pack hero-pack--ramen" style="height:247px !important;" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-mushroom-ramen.png" loading="eager" alt="Spicy Creamy Mushroom Ramen pack" />
+                                    <img class="hero-pack hero-pack--ramen" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-chicken-ramen.png" loading="eager" alt="Spicy Creamy Chicken Ramen pack" />
+                                    <img class="hero-pack hero-pack--ramen" id="reman-last" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-mushroom-ramen.png" loading="eager" alt="Spicy Creamy Mushroom Ramen pack" />
                                 </div>
                             </div>
                         </div>
@@ -98,7 +98,20 @@ position: sticky !important;
 				</div>
             </div>
     </div>
+<style>
+#reman-last{
+height:247px !important;
+}
+@media(max-width:768px){
 
+#reman-last{
+height:145px !important;
+}
+#hero-packo{
+height:138px !important;
+}
+}
+</style>
 
 
 
@@ -1689,6 +1702,361 @@ position: sticky !important;
   activateCategory('soups', false);
 })();
 </script>
+
+
+<style id="brothsmen-mobile-hero-cleanup-final">
+/* Mobile-only banner correction. Desktop/tablet rules above remain untouched. */
+@media (max-width: 767px) {
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  .navbar {
+    height: 72px !important;
+  }
+
+  .c-nav-shim,
+  .c-nav__container {
+    height: 72px !important;
+  }
+
+  .navbar .brand {
+    min-height: 72px !important;
+  }
+
+  .navbar .imgbanner {
+    width: min(238px, 78vw) !important;
+    max-height: 54px !important;
+  }
+
+  .brothsmen-hero.c-m1,
+  .brothsmen-hero {
+    height: auto !important;
+    min-height: 0 !important;
+    padding-bottom: 36px !important;
+    overflow: hidden !important;
+    background-color: #fdfaf2 !important;
+    background-image: radial-gradient(circle at 50% 14%, rgba(255, 255, 255, .86) 0%, rgba(255, 255, 255, .56) 36%, rgba(253, 250, 242, 1) 74%) !important;
+  }
+
+  .brothsmen-hero .c-m1__container {
+    width: 100% !important;
+    max-width: 430px !important;
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 32px 18px 40px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+
+  .brothsmen-hero .c-m1__intro {
+    width: 100% !important;
+    display: flex !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .brothsmen-hero .heading-1-big {
+    width: 100% !important;
+    max-width: 350px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    font-size: clamp(27px, 8.6vw, 36px) !important;
+    line-height: 1.08 !important;
+    letter-spacing: .015em !important;
+    text-align: center !important;
+  }
+
+  .brothsmen-hero .hero-title-line {
+    width: 48px !important;
+    height: 2px !important;
+    margin: 18px auto 30px !important;
+  }
+
+  .brothsmen-hero .c-m1__product,
+  .brothsmen-hero .div-block-7,
+  .hero-pack-showcase {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+  }
+
+  .hero-product-groups {
+    width: 100% !important;
+    max-width: 360px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    justify-content: flex-start !important;
+    gap: 34px !important;
+  }
+
+  .hero-product-group {
+    width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+
+  .hero-category {
+    width: 100% !important;
+    margin: 0 0 14px !important;
+    gap: 7px !important;
+  }
+
+  .hero-category-icon {
+    width: 23px !important;
+    height: 23px !important;
+    stroke-width: 3 !important;
+  }
+
+  .hero-category-label {
+    width: 100% !important;
+    max-width: 250px !important;
+    margin: 0 auto !important;
+    gap: 10px !important;
+    font-size: 13px !important;
+    line-height: 1 !important;
+  }
+
+  .hero-category-line {
+    min-width: 36px !important;
+    max-width: 70px !important;
+  }
+
+  .hero-pack-group {
+    width: 100% !important;
+    max-width: 330px !important;
+    margin: 0 auto !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: center !important;
+    gap: 14px !important;
+    flex-wrap: nowrap !important;
+  }
+
+  .hero-product-group--soups .hero-pack-group {
+    max-width: 340px !important;
+    gap: 7px !important;
+  }
+
+  .hero-pack,
+  .hero-pack--center,
+  .hero-product-group--pasta .hero-pack:first-child,
+  .hero-product-group--ramen .hero-pack:last-child {
+    width: min(31vw, 118px) !important;
+    max-width: 118px !important;
+    height: auto !important;
+    max-height: none !important;
+    margin: 0 !important;
+    transform: none !important;
+    display: block !important;
+    filter: drop-shadow(0 16px 16px rgba(62, 36, 10, .20)) !important;
+  }
+
+  .hero-product-group--soups .hero-pack,
+  .hero-product-group--soups .hero-pack--center {
+    width: min(28.4vw, 106px) !important;
+    max-width: 106px !important;
+  }
+
+  .hero-pack:hover {
+    transform: none !important;
+  }
+
+  .hero-benefit-row {
+    width: 100% !important;
+    max-width: 318px !important;
+    margin: 36px auto 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 0 !important;
+  }
+
+  .hero-benefit {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: 0 !important;
+    display: grid !important;
+    grid-template-columns: 38px 1fr !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 13px !important;
+    padding: 13px 8px !important;
+    border-right: 0 !important;
+    border-bottom: 1px solid rgba(47, 44, 44, .14) !important;
+    text-align: left !important;
+  }
+
+  .hero-benefit:last-child {
+    border-bottom: 0 !important;
+  }
+
+  .hero-benefit-icon {
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .hero-benefit strong {
+    font-size: 11px !important;
+    line-height: 1.16 !important;
+  }
+
+  .hero-benefit-copy > span,
+  .hero-benefit span span {
+    font-size: 10.5px !important;
+    line-height: 1.25 !important;
+  }
+
+  .brothsmen-hero .down-button-wrapper {
+    display: none !important;
+  }
+}
+
+@media (max-width: 360px) {
+  .brothsmen-hero .c-m1__container {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .brothsmen-hero .heading-1-big {
+    font-size: clamp(24px, 8.2vw, 31px) !important;
+  }
+
+  .hero-product-groups {
+    max-width: 320px !important;
+    gap: 30px !important;
+  }
+
+  .hero-pack-group {
+    gap: 10px !important;
+  }
+
+  .hero-product-group--soups .hero-pack-group {
+    gap: 5px !important;
+  }
+
+  .hero-pack,
+  .hero-pack--center,
+  .hero-product-group--pasta .hero-pack:first-child,
+  .hero-product-group--ramen .hero-pack:last-child {
+    width: min(30vw, 98px) !important;
+  }
+
+  .hero-product-group--soups .hero-pack,
+  .hero-product-group--soups .hero-pack--center {
+    width: min(28vw, 88px) !important;
+  }
+}
+
+@media (max-width: 240px) {
+  .navbar,
+  .c-nav-shim,
+  .c-nav__container {
+    height: 58px !important;
+  }
+
+  .navbar .brand {
+    min-height: 58px !important;
+  }
+
+  .navbar .imgbanner {
+    width: 172px !important;
+    max-height: 42px !important;
+  }
+
+  .brothsmen-hero .c-m1__container {
+    padding: 24px 10px 30px !important;
+  }
+
+  .brothsmen-hero .heading-1-big {
+    font-size: 21px !important;
+    line-height: 1.08 !important;
+  }
+
+  .brothsmen-hero .hero-title-line {
+    margin-bottom: 24px !important;
+  }
+
+  .hero-product-groups {
+    gap: 25px !important;
+  }
+
+  .hero-category-label {
+    font-size: 11px !important;
+    gap: 7px !important;
+  }
+
+  .hero-category-line {
+    min-width: 18px !important;
+    max-width: 42px !important;
+  }
+
+  .hero-category-icon {
+    width: 19px !important;
+    height: 19px !important;
+  }
+
+  .hero-pack-group {
+    gap: 6px !important;
+  }
+
+  .hero-product-group--soups .hero-pack-group {
+    gap: 3px !important;
+  }
+
+  .hero-pack,
+  .hero-pack--center,
+  .hero-product-group--pasta .hero-pack:first-child,
+  .hero-product-group--ramen .hero-pack:last-child {
+    width: min(38vw, 64px) !important;
+  }
+
+  .hero-product-group--soups .hero-pack,
+  .hero-product-group--soups .hero-pack--center {
+    width: min(31vw, 48px) !important;
+  }
+
+  .hero-benefit-row {
+    margin-top: 24px !important;
+  }
+
+  .hero-benefit {
+    grid-template-columns: 28px 1fr !important;
+    gap: 8px !important;
+    padding: 10px 3px !important;
+  }
+
+  .hero-benefit-icon {
+    width: 24px !important;
+    height: 24px !important;
+  }
+
+  .hero-benefit strong {
+    font-size: 9px !important;
+  }
+
+  .hero-benefit-copy > span,
+  .hero-benefit span span {
+    font-size: 8px !important;
+  }
+}
+</style>
 
 </body>
 
