@@ -62,7 +62,7 @@ position: sticky !important;
                                     <div class="hero-category-label"><span class="hero-category-line"></span><span>Pastas</span><span class="hero-category-line"></span></div>
                                 </div>
                                 <div class="hero-pack-group hero-pack-group--two">
-                                    <img class="hero-pack hero-pack--pasta" src="newImgClientShared/hero-packs/hero-pack-alfredo-chicken.png" loading="eager" alt="Alfredo Chicken Pasta pack" />
+                                    <img class="hero-pack hero-pack--pasta" src="newImgClientShared/hero-packs-2/hero-pack-alfredo-chicken.png" loading="eager" alt="Alfredo Chicken Pasta pack" />
                                     <img class="hero-pack hero-pack--pasta" src="newImgClientShared/hero-packs/hero-pack-alfredo-mushroom.png" loading="eager" alt="Alfredo Mushroom Pasta pack" />
                                 </div>
                             </div>
@@ -83,8 +83,8 @@ position: sticky !important;
                                     <div class="hero-category-label"><span class="hero-category-line"></span><span>Ramen</span><span class="hero-category-line"></span></div>
                                 </div>
                                 <div class="hero-pack-group hero-pack-group--two">
-                                    <img class="hero-pack hero-pack--ramen"  src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-chicken-ramen.png" loading="eager" alt="Spicy Creamy Chicken Ramen pack" />
-                                    <img class="hero-pack hero-pack--ramen" style="height:249px !important;" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-mushroom-ramen.png" loading="eager" alt="Spicy Creamy Mushroom Ramen pack" />
+                                    <img class="hero-pack hero-pack--ramen" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-chicken-ramen.png" loading="eager" alt="Spicy Creamy Chicken Ramen pack" />
+                                    <img class="hero-pack hero-pack--ramen" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-mushroom-ramen.png" loading="eager" alt="Spicy Creamy Mushroom Ramen pack" />
                                 </div>
                             </div>
                         </div>
@@ -176,16 +176,16 @@ position: sticky !important;
                 </div>
                 <div class="c-m4__products-wrap range-products-wrap">
                     <div class="c-m4__product-wrapper">
-                        <div class="c-m4__product-shot"><img src="assets/img2.png" loading="lazy" srcset="assets/img2.png"
-                                alt="Creamy Mushroom Soup" class="c-m4__image c-m4__imagesss range-product-image" data-range-image-index="0" /></div>
+                        <div class="c-m4__product-shot"><img src="newImgClientShared/hero-packs/hero-pack-creamy-mushroom-soup.png" loading="lazy" srcset="newImgClientShared/hero-packs/hero-pack-creamy-mushroom-soup.png"
+                                alt="Creamy Mushroom Soup pack" class="c-m4__image c-m4__imagesss range-product-image" data-range-image-index="0" /></div>
                     </div>
                     <div class="c-m4__product-wrapper">
-                        <div class="c-m4__product-shot"><img src="assets/img1.png" loading="lazy" alt="Tomato and Basil Soup" srcset="assets/img1.png"
+                        <div class="c-m4__product-shot"><img src="newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png" loading="lazy" alt="Tomato and Basil Soup pack" srcset="newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png"
                                 class="c-m4__image c-m4__imagesss range-product-image" data-range-image-index="1" /></div>
                     </div>
                     <div class="c-m4__product-wrapper">
-                        <div class="c-m4__product-shot"><img src="updated/cream.jpg" loading="lazy" 
-                                alt="Classic Chicken Soup" srcset="updated/cream.jpg"
+                        <div class="c-m4__product-shot"><img src="newImgClientShared/hero-packs/hero-pack-classic-chicken-soup.png" loading="lazy" 
+                                alt="Classic Chicken Soup pack" srcset="newImgClientShared/hero-packs/hero-pack-classic-chicken-soup.png"
                                 class="c-m4__image c-m4__imagesss range-product-image" data-range-image-index="2" /></div>
                     </div>
                 </div>
@@ -1388,7 +1388,7 @@ position: sticky !important;
 
 
 <style id="brothsmen-rev2-polish">
-/* Client rev 2: refreshed banner, clean tabs, food-only range visuals, and bare marketplace logos. */
+/* Client rev 2/3: refreshed banner, clean tabs, client packshot range visuals, and bare marketplace logos. */
 .navbar .brand{display:block;width:100%;}
 .navbar .imgbanner{width:300px !important;height:auto !important;display:block !important;margin:0 auto !important;object-fit:contain !important;}
 .c-nav__container{display:flex;align-items:center;justify-content:center;}
@@ -1512,6 +1512,29 @@ position: sticky !important;
 @media (max-width:479px){.navbar{height:78px !important;}.c-nav-shim,.c-nav__container{height:78px !important;}.navbar .imgbanner{width:238px !important;}.brothsmen-hero .c-m1__container{padding-left:18px !important;padding-right:18px !important;}.hero-pack,.hero-pack--center{width:104px !important;}.hero-product-groups{gap:32px;}.hero-pack-group--three{flex-wrap:wrap;}.hero-benefit{max-width:290px !important;}}
 </style>
 
+
+<style id="brothsmen-rev3-packshot-polish">
+/* Rev 3: use client packshots in the hero and range while keeping the established layout/scroll behavior. */
+.hero-pack{object-fit:contain !important;background:transparent !important;}
+#our-range .range-product-image{
+  width:340px !important;
+  max-width:31vw !important;
+  max-height:520px !important;
+  object-fit:contain !important;
+  filter:drop-shadow(0 22px 22px rgba(62,36,10,.18)) !important;
+}
+#our-range .range-mobile-card img{
+  width:190px !important;
+  max-width:62vw !important;
+  max-height:260px !important;
+  filter:drop-shadow(0 16px 18px rgba(62,36,10,.14)) !important;
+}
+@media (max-width:1440px){#our-range .range-product-image{width:325px !important;max-width:31vw !important;}}
+@media (max-width:1280px){#our-range .range-product-image{width:305px !important;max-height:470px !important;}}
+@media (max-width:1024px){#our-range .range-product-image{width:280px !important;max-width:36vw !important;max-height:430px !important;}}
+@media (max-width:767px){#our-range .range-mobile-card img{width:180px !important;max-height:250px !important;}}
+</style>
+
 <script id="brothsmen-range-tab-data-final">
 (function () {
   const rangeSection = document.getElementById('our-range');
@@ -1531,20 +1554,20 @@ position: sticky !important;
       items: [
         {
           title: 'Creamy Mushroom Soup',
-          image: 'assets/img2.png',
-          alt: 'Creamy Mushroom Soup',
+          image: 'newImgClientShared/hero-packs/hero-pack-creamy-mushroom-soup.png',
+          alt: 'Creamy Mushroom Soup pack',
           description: 'Farm fresh mushrooms, caramelised and slow cooked with onion, garlic and thyme, blended with a dollop of cream to give you a deliciously velvety soup. Enjoy the flavours of earthy, wholesome ingredients and real mushrooms in every bite. Pair it with garlic bread and enjoy a yummy meal! 100% vegetarian.'
         },
         {
           title: 'Tomato & Basil Soup',
-          image: 'assets/img1.png',
-          alt: 'Tomato and Basil Soup',
+          image: 'newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png',
+          alt: 'Tomato and Basil Soup pack',
           description: 'This classic favourite is made from plump tomatoes, fresh basil, sauteed garlic and cream, perfectly blended together. Tangy and flavourful, this hearty comfort soup comes with an Italian twist. Add toasted croutons and you’ve got yourself a delicious meal! 100% vegetarian.'
         },
         {
           title: 'Classic Chicken Soup',
-          image: 'updated/cream.jpg',
-          alt: 'Classic Chicken Soup',
+          image: 'newImgClientShared/hero-packs/hero-pack-classic-chicken-soup.png',
+          alt: 'Classic Chicken Soup pack',
           description: 'Made with chunks of juicy tender chicken, seared in garlic and butter, topped with cream. Italian and French flavours combine in this protein-rich velvety soup. Pair it with garlic bread and you’ve got yourself a delicious meal.'
         }
       ]
@@ -1554,14 +1577,14 @@ position: sticky !important;
       items: [
         {
           title: 'Alfredo Chicken Pasta Sauce',
-          image: 'newImgClientShared/food-alfredo-chicken.png',
-          alt: 'Alfredo Chicken Pasta Sauce bowl',
+          image: 'newImgClientShared/hero-packs/hero-pack-alfredo-chicken.png',
+          alt: 'Alfredo Chicken Pasta Sauce pack',
           description: 'A creamy, ready-to-eat Alfredo-style pasta sauce with real chicken chunks. Add cooked pasta and enjoy a rich gourmet meal without long prep time or flavour shortcuts.'
         },
         {
           title: 'Alfredo Mushroom Pasta Sauce',
-          image: 'newImgClientShared/food-alfredo-mushroom.png',
-          alt: 'Alfredo Mushroom Pasta Sauce bowl',
+          image: 'newImgClientShared/hero-packs/hero-pack-alfredo-mushroom.png',
+          alt: 'Alfredo Mushroom Pasta Sauce pack',
           description: 'A vegetarian Alfredo-style pasta sauce with real mushrooms, creamy depth and savoury comfort. Add cooked pasta for a quick gourmet meal that still tastes slow-made.'
         }
       ]
@@ -1571,14 +1594,14 @@ position: sticky !important;
       items: [
         {
           title: 'Spicy Creamy Chicken Ramen Broth',
-          image: 'newImgClientShared/food-spicy-creamy-chicken-ramen.png',
-          alt: 'Spicy Creamy Chicken Ramen bowl',
+          image: 'newImgClientShared/hero-packs/hero-pack-spicy-creamy-chicken-ramen.png',
+          alt: 'Spicy Creamy Chicken Ramen Broth pack',
           description: 'A bold, creamy ramen broth with real chicken chunks, warming spice and ready-to-eat convenience. Add cooked noodles for a filling ramen bowl in minutes.'
         },
         {
           title: 'Spicy Creamy Mushroom Ramen Broth',
-          image: 'newImgClientShared/food-spicy-creamy-mushroom-ramen.png',
-          alt: 'Spicy Creamy Mushroom Ramen bowl',
+          image: 'newImgClientShared/hero-packs/hero-pack-spicy-creamy-mushroom-ramen.png',
+          alt: 'Spicy Creamy Mushroom Ramen Broth pack',
           description: 'A rich vegetarian ramen broth with umami mushroom, creamy body and warming spice. Add cooked noodles for a restaurant-style bowl without the long simmering.'
         }
       ]

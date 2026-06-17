@@ -73,7 +73,7 @@ position: sticky !important;
                                 </div>
                                 <div class="hero-pack-group hero-pack-group--three">
                                     <img class="hero-pack hero-pack--soup" src="newImgClientShared/hero-packs/hero-pack-classic-chicken-soup.png" loading="eager" alt="Classic Chicken Soup pack" />
-                                    <img class="hero-pack hero-pack--center" id="hero-packo" src="newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png" loading="eager" alt="Tomato and Basil Soup pack" />
+                                    <img class="hero-pack hero-pack--center" src="newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png" loading="eager" alt="Tomato and Basil Soup pack" />
                                     <img class="hero-pack hero-pack--soup" src="newImgClientShared/hero-packs/hero-pack-creamy-mushroom-soup.png" loading="eager" alt="Creamy Mushroom Soup pack" />
                                 </div>
                             </div>
@@ -84,7 +84,7 @@ position: sticky !important;
                                 </div>
                                 <div class="hero-pack-group hero-pack-group--two">
                                     <img class="hero-pack hero-pack--ramen" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-chicken-ramen.png" loading="eager" alt="Spicy Creamy Chicken Ramen pack" />
-                                    <img class="hero-pack hero-pack--ramen" id="reman-last" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-mushroom-ramen.png" loading="eager" alt="Spicy Creamy Mushroom Ramen pack" />
+                                    <img class="hero-pack hero-pack--ramen" src="newImgClientShared/hero-packs/hero-pack-spicy-creamy-mushroom-ramen.png" loading="eager" alt="Spicy Creamy Mushroom Ramen pack" />
                                 </div>
                             </div>
                         </div>
@@ -98,20 +98,7 @@ position: sticky !important;
 				</div>
             </div>
     </div>
-<style>
-#reman-last{
-height:247px !important;
-}
-@media(max-width:768px){
 
-#reman-last{
-height:145px !important;
-}
-#hero-packo{
-height:138px !important;
-}
-}
-</style>
 
 
 
@@ -189,16 +176,16 @@ height:138px !important;
                 </div>
                 <div class="c-m4__products-wrap range-products-wrap">
                     <div class="c-m4__product-wrapper">
-                        <div class="c-m4__product-shot"><img src="assets/img2.png" loading="lazy" srcset="assets/img2.png"
-                                alt="Creamy Mushroom Soup" class="c-m4__image c-m4__imagesss range-product-image" data-range-image-index="0" /></div>
+                        <div class="c-m4__product-shot"><img src="newImgClientShared/hero-packs/hero-pack-creamy-mushroom-soup.png" loading="lazy" srcset="newImgClientShared/hero-packs/hero-pack-creamy-mushroom-soup.png"
+                                alt="Creamy Mushroom Soup pack" class="c-m4__image c-m4__imagesss range-product-image" data-range-image-index="0" /></div>
                     </div>
                     <div class="c-m4__product-wrapper">
-                        <div class="c-m4__product-shot"><img src="assets/img1.png" loading="lazy" alt="Tomato and Basil Soup" srcset="assets/img1.png"
+                        <div class="c-m4__product-shot"><img src="newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png" loading="lazy" alt="Tomato and Basil Soup pack" srcset="newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png"
                                 class="c-m4__image c-m4__imagesss range-product-image" data-range-image-index="1" /></div>
                     </div>
                     <div class="c-m4__product-wrapper">
-                        <div class="c-m4__product-shot"><img src="updated/cream.jpg" loading="lazy" 
-                                alt="Classic Chicken Soup" srcset="updated/cream.jpg"
+                        <div class="c-m4__product-shot"><img src="newImgClientShared/hero-packs/hero-pack-classic-chicken-soup.png" loading="lazy" 
+                                alt="Classic Chicken Soup pack" srcset="newImgClientShared/hero-packs/hero-pack-classic-chicken-soup.png"
                                 class="c-m4__image c-m4__imagesss range-product-image" data-range-image-index="2" /></div>
                     </div>
                 </div>
@@ -1401,7 +1388,7 @@ height:138px !important;
 
 
 <style id="brothsmen-rev2-polish">
-/* Client rev 2: refreshed banner, clean tabs, food-only range visuals, and bare marketplace logos. */
+/* Client rev 2/3: refreshed banner, clean tabs, client packshot range visuals, and bare marketplace logos. */
 .navbar .brand{display:block;width:100%;}
 .navbar .imgbanner{width:300px !important;height:auto !important;display:block !important;margin:0 auto !important;object-fit:contain !important;}
 .c-nav__container{display:flex;align-items:center;justify-content:center;}
@@ -1525,6 +1512,29 @@ height:138px !important;
 @media (max-width:479px){.navbar{height:78px !important;}.c-nav-shim,.c-nav__container{height:78px !important;}.navbar .imgbanner{width:238px !important;}.brothsmen-hero .c-m1__container{padding-left:18px !important;padding-right:18px !important;}.hero-pack,.hero-pack--center{width:104px !important;}.hero-product-groups{gap:32px;}.hero-pack-group--three{flex-wrap:wrap;}.hero-benefit{max-width:290px !important;}}
 </style>
 
+
+<style id="brothsmen-rev3-packshot-polish">
+/* Rev 3: use client packshots in the hero and range while keeping the established layout/scroll behavior. */
+.hero-pack{object-fit:contain !important;background:transparent !important;}
+#our-range .range-product-image{
+  width:340px !important;
+  max-width:31vw !important;
+  max-height:520px !important;
+  object-fit:contain !important;
+  filter:drop-shadow(0 22px 22px rgba(62,36,10,.18)) !important;
+}
+#our-range .range-mobile-card img{
+  width:190px !important;
+  max-width:62vw !important;
+  max-height:260px !important;
+  filter:drop-shadow(0 16px 18px rgba(62,36,10,.14)) !important;
+}
+@media (max-width:1440px){#our-range .range-product-image{width:325px !important;max-width:31vw !important;}}
+@media (max-width:1280px){#our-range .range-product-image{width:305px !important;max-height:470px !important;}}
+@media (max-width:1024px){#our-range .range-product-image{width:280px !important;max-width:36vw !important;max-height:430px !important;}}
+@media (max-width:767px){#our-range .range-mobile-card img{width:180px !important;max-height:250px !important;}}
+</style>
+
 <script id="brothsmen-range-tab-data-final">
 (function () {
   const rangeSection = document.getElementById('our-range');
@@ -1544,20 +1554,20 @@ height:138px !important;
       items: [
         {
           title: 'Creamy Mushroom Soup',
-          image: 'assets/img2.png',
-          alt: 'Creamy Mushroom Soup',
+          image: 'newImgClientShared/hero-packs/hero-pack-creamy-mushroom-soup.png',
+          alt: 'Creamy Mushroom Soup pack',
           description: 'Farm fresh mushrooms, caramelised and slow cooked with onion, garlic and thyme, blended with a dollop of cream to give you a deliciously velvety soup. Enjoy the flavours of earthy, wholesome ingredients and real mushrooms in every bite. Pair it with garlic bread and enjoy a yummy meal! 100% vegetarian.'
         },
         {
           title: 'Tomato & Basil Soup',
-          image: 'assets/img1.png',
-          alt: 'Tomato and Basil Soup',
+          image: 'newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png',
+          alt: 'Tomato and Basil Soup pack',
           description: 'This classic favourite is made from plump tomatoes, fresh basil, sauteed garlic and cream, perfectly blended together. Tangy and flavourful, this hearty comfort soup comes with an Italian twist. Add toasted croutons and you’ve got yourself a delicious meal! 100% vegetarian.'
         },
         {
           title: 'Classic Chicken Soup',
-          image: 'updated/cream.jpg',
-          alt: 'Classic Chicken Soup',
+          image: 'newImgClientShared/hero-packs/hero-pack-classic-chicken-soup.png',
+          alt: 'Classic Chicken Soup pack',
           description: 'Made with chunks of juicy tender chicken, seared in garlic and butter, topped with cream. Italian and French flavours combine in this protein-rich velvety soup. Pair it with garlic bread and you’ve got yourself a delicious meal.'
         }
       ]
@@ -1567,14 +1577,14 @@ height:138px !important;
       items: [
         {
           title: 'Alfredo Chicken Pasta Sauce',
-          image: 'newImgClientShared/food-alfredo-chicken.png',
-          alt: 'Alfredo Chicken Pasta Sauce bowl',
+          image: 'newImgClientShared/hero-packs/hero-pack-alfredo-chicken.png',
+          alt: 'Alfredo Chicken Pasta Sauce pack',
           description: 'A creamy, ready-to-eat Alfredo-style pasta sauce with real chicken chunks. Add cooked pasta and enjoy a rich gourmet meal without long prep time or flavour shortcuts.'
         },
         {
           title: 'Alfredo Mushroom Pasta Sauce',
-          image: 'newImgClientShared/food-alfredo-mushroom.png',
-          alt: 'Alfredo Mushroom Pasta Sauce bowl',
+          image: 'newImgClientShared/hero-packs/hero-pack-alfredo-mushroom.png',
+          alt: 'Alfredo Mushroom Pasta Sauce pack',
           description: 'A vegetarian Alfredo-style pasta sauce with real mushrooms, creamy depth and savoury comfort. Add cooked pasta for a quick gourmet meal that still tastes slow-made.'
         }
       ]
@@ -1584,14 +1594,14 @@ height:138px !important;
       items: [
         {
           title: 'Spicy Creamy Chicken Ramen Broth',
-          image: 'newImgClientShared/food-spicy-creamy-chicken-ramen.png',
-          alt: 'Spicy Creamy Chicken Ramen bowl',
+          image: 'newImgClientShared/hero-packs/hero-pack-spicy-creamy-chicken-ramen.png',
+          alt: 'Spicy Creamy Chicken Ramen Broth pack',
           description: 'A bold, creamy ramen broth with real chicken chunks, warming spice and ready-to-eat convenience. Add cooked noodles for a filling ramen bowl in minutes.'
         },
         {
           title: 'Spicy Creamy Mushroom Ramen Broth',
-          image: 'newImgClientShared/food-spicy-creamy-mushroom-ramen.png',
-          alt: 'Spicy Creamy Mushroom Ramen bowl',
+          image: 'newImgClientShared/hero-packs/hero-pack-spicy-creamy-mushroom-ramen.png',
+          alt: 'Spicy Creamy Mushroom Ramen Broth pack',
           description: 'A rich vegetarian ramen broth with umami mushroom, creamy body and warming spice. Add cooked noodles for a restaurant-style bowl without the long simmering.'
         }
       ]
@@ -1702,361 +1712,6 @@ height:138px !important;
   activateCategory('soups', false);
 })();
 </script>
-
-
-<style id="brothsmen-mobile-hero-cleanup-final">
-/* Mobile-only banner correction. Desktop/tablet rules above remain untouched. */
-@media (max-width: 767px) {
-  html,
-  body {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
-  }
-
-  .navbar {
-    height: 72px !important;
-  }
-
-  .c-nav-shim,
-  .c-nav__container {
-    height: 72px !important;
-  }
-
-  .navbar .brand {
-    min-height: 72px !important;
-  }
-
-  .navbar .imgbanner {
-    width: min(238px, 78vw) !important;
-    max-height: 54px !important;
-  }
-
-  .brothsmen-hero.c-m1,
-  .brothsmen-hero {
-    height: auto !important;
-    min-height: 0 !important;
-    padding-bottom: 36px !important;
-    overflow: hidden !important;
-    background-color: #fdfaf2 !important;
-    background-image: radial-gradient(circle at 50% 14%, rgba(255, 255, 255, .86) 0%, rgba(255, 255, 255, .56) 36%, rgba(253, 250, 242, 1) 74%) !important;
-  }
-
-  .brothsmen-hero .c-m1__container {
-    width: 100% !important;
-    max-width: 430px !important;
-    min-height: 0 !important;
-    height: auto !important;
-    padding: 32px 18px 40px !important;
-    margin: 0 auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-start !important;
-    align-items: center !important;
-  }
-
-  .brothsmen-hero .c-m1__intro {
-    width: 100% !important;
-    display: flex !important;
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  .brothsmen-hero .heading-1-big {
-    width: 100% !important;
-    max-width: 350px !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    font-size: clamp(27px, 8.6vw, 36px) !important;
-    line-height: 1.08 !important;
-    letter-spacing: .015em !important;
-    text-align: center !important;
-  }
-
-  .brothsmen-hero .hero-title-line {
-    width: 48px !important;
-    height: 2px !important;
-    margin: 18px auto 30px !important;
-  }
-
-  .brothsmen-hero .c-m1__product,
-  .brothsmen-hero .div-block-7,
-  .hero-pack-showcase {
-    width: 100% !important;
-    max-width: 100% !important;
-    height: auto !important;
-    margin: 0 auto !important;
-    padding: 0 !important;
-    position: relative !important;
-    top: auto !important;
-    left: auto !important;
-  }
-
-  .hero-product-groups {
-    width: 100% !important;
-    max-width: 360px !important;
-    margin: 0 auto !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    justify-content: flex-start !important;
-    gap: 34px !important;
-  }
-
-  .hero-product-group {
-    width: 100% !important;
-    min-width: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-
-  .hero-category {
-    width: 100% !important;
-    margin: 0 0 14px !important;
-    gap: 7px !important;
-  }
-
-  .hero-category-icon {
-    width: 23px !important;
-    height: 23px !important;
-    stroke-width: 3 !important;
-  }
-
-  .hero-category-label {
-    width: 100% !important;
-    max-width: 250px !important;
-    margin: 0 auto !important;
-    gap: 10px !important;
-    font-size: 13px !important;
-    line-height: 1 !important;
-  }
-
-  .hero-category-line {
-    min-width: 36px !important;
-    max-width: 70px !important;
-  }
-
-  .hero-pack-group {
-    width: 100% !important;
-    max-width: 330px !important;
-    margin: 0 auto !important;
-    display: flex !important;
-    align-items: flex-end !important;
-    justify-content: center !important;
-    gap: 14px !important;
-    flex-wrap: nowrap !important;
-  }
-
-  .hero-product-group--soups .hero-pack-group {
-    max-width: 340px !important;
-    gap: 7px !important;
-  }
-
-  .hero-pack,
-  .hero-pack--center,
-  .hero-product-group--pasta .hero-pack:first-child,
-  .hero-product-group--ramen .hero-pack:last-child {
-    width: min(31vw, 118px) !important;
-    max-width: 118px !important;
-    height: auto !important;
-    max-height: none !important;
-    margin: 0 !important;
-    transform: none !important;
-    display: block !important;
-    filter: drop-shadow(0 16px 16px rgba(62, 36, 10, .20)) !important;
-  }
-
-  .hero-product-group--soups .hero-pack,
-  .hero-product-group--soups .hero-pack--center {
-    width: min(28.4vw, 106px) !important;
-    max-width: 106px !important;
-  }
-
-  .hero-pack:hover {
-    transform: none !important;
-  }
-
-  .hero-benefit-row {
-    width: 100% !important;
-    max-width: 318px !important;
-    margin: 36px auto 0 !important;
-    padding: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: stretch !important;
-    gap: 0 !important;
-  }
-
-  .hero-benefit {
-    width: 100% !important;
-    max-width: none !important;
-    min-width: 0 !important;
-    display: grid !important;
-    grid-template-columns: 38px 1fr !important;
-    align-items: center !important;
-    justify-content: flex-start !important;
-    gap: 13px !important;
-    padding: 13px 8px !important;
-    border-right: 0 !important;
-    border-bottom: 1px solid rgba(47, 44, 44, .14) !important;
-    text-align: left !important;
-  }
-
-  .hero-benefit:last-child {
-    border-bottom: 0 !important;
-  }
-
-  .hero-benefit-icon {
-    width: 32px !important;
-    height: 32px !important;
-  }
-
-  .hero-benefit strong {
-    font-size: 11px !important;
-    line-height: 1.16 !important;
-  }
-
-  .hero-benefit-copy > span,
-  .hero-benefit span span {
-    font-size: 10.5px !important;
-    line-height: 1.25 !important;
-  }
-
-  .brothsmen-hero .down-button-wrapper {
-    display: none !important;
-  }
-}
-
-@media (max-width: 360px) {
-  .brothsmen-hero .c-m1__container {
-    padding-left: 14px !important;
-    padding-right: 14px !important;
-  }
-
-  .brothsmen-hero .heading-1-big {
-    font-size: clamp(24px, 8.2vw, 31px) !important;
-  }
-
-  .hero-product-groups {
-    max-width: 320px !important;
-    gap: 30px !important;
-  }
-
-  .hero-pack-group {
-    gap: 10px !important;
-  }
-
-  .hero-product-group--soups .hero-pack-group {
-    gap: 5px !important;
-  }
-
-  .hero-pack,
-  .hero-pack--center,
-  .hero-product-group--pasta .hero-pack:first-child,
-  .hero-product-group--ramen .hero-pack:last-child {
-    width: min(30vw, 98px) !important;
-  }
-
-  .hero-product-group--soups .hero-pack,
-  .hero-product-group--soups .hero-pack--center {
-    width: min(28vw, 88px) !important;
-  }
-}
-
-@media (max-width: 240px) {
-  .navbar,
-  .c-nav-shim,
-  .c-nav__container {
-    height: 58px !important;
-  }
-
-  .navbar .brand {
-    min-height: 58px !important;
-  }
-
-  .navbar .imgbanner {
-    width: 172px !important;
-    max-height: 42px !important;
-  }
-
-  .brothsmen-hero .c-m1__container {
-    padding: 24px 10px 30px !important;
-  }
-
-  .brothsmen-hero .heading-1-big {
-    font-size: 21px !important;
-    line-height: 1.08 !important;
-  }
-
-  .brothsmen-hero .hero-title-line {
-    margin-bottom: 24px !important;
-  }
-
-  .hero-product-groups {
-    gap: 25px !important;
-  }
-
-  .hero-category-label {
-    font-size: 11px !important;
-    gap: 7px !important;
-  }
-
-  .hero-category-line {
-    min-width: 18px !important;
-    max-width: 42px !important;
-  }
-
-  .hero-category-icon {
-    width: 19px !important;
-    height: 19px !important;
-  }
-
-  .hero-pack-group {
-    gap: 6px !important;
-  }
-
-  .hero-product-group--soups .hero-pack-group {
-    gap: 3px !important;
-  }
-
-  .hero-pack,
-  .hero-pack--center,
-  .hero-product-group--pasta .hero-pack:first-child,
-  .hero-product-group--ramen .hero-pack:last-child {
-    width: min(38vw, 64px) !important;
-  }
-
-  .hero-product-group--soups .hero-pack,
-  .hero-product-group--soups .hero-pack--center {
-    width: min(31vw, 48px) !important;
-  }
-
-  .hero-benefit-row {
-    margin-top: 24px !important;
-  }
-
-  .hero-benefit {
-    grid-template-columns: 28px 1fr !important;
-    gap: 8px !important;
-    padding: 10px 3px !important;
-  }
-
-  .hero-benefit-icon {
-    width: 24px !important;
-    height: 24px !important;
-  }
-
-  .hero-benefit strong {
-    font-size: 9px !important;
-  }
-
-  .hero-benefit-copy > span,
-  .hero-benefit span span {
-    font-size: 8px !important;
-  }
-}
-</style>
 
 </body>
 
