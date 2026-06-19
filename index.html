@@ -52,22 +52,7 @@ position: sticky !important;
                </div>
             <div class="c-m1__product">
                 <div class="div-block-7">
-				<style>
-				#hero-pack-soup-1{
-					height:208px !important;
-				}
-				@media(max-width:1440px){
-				#hero-pack-soup-1{
-					height:195px !important;
-				}
-				@media(max-width:768px){
-				#hero-pack-soup-1{
-					height:200px !important;
-				}
-				}
-				</style>
-				
-				<div class="hero-pack-showcase" aria-label="Brothsmen product range banner">
+<div class="hero-pack-showcase" aria-label="Brothsmen product range banner">
                         <div class="hero-product-groups">
                             <div class="hero-product-group hero-product-group--pasta">
                                 <div class="hero-category" aria-label="Pastas">
@@ -85,7 +70,7 @@ position: sticky !important;
                                     <div class="hero-category-label"><span class="hero-category-line"></span><span>Soups</span><span class="hero-category-line"></span></div>
                                 </div>
                                 <div class="hero-pack-group hero-pack-group--three">
-                                    <img class="hero-pack hero-pack--soup" id="hero-pack-soup-1" src="newImgClientShared/hero-packs/hero-pack-classic-chicken-soup.png" loading="eager" alt="Classic Chicken Soup pack" />
+                                    <img class="hero-pack hero-pack--soup" src="newImgClientShared/hero-packs/hero-pack-classic-chicken-soup.png" loading="eager" alt="Classic Chicken Soup pack" />
                                     <img class="hero-pack hero-pack--soup" src="newImgClientShared/hero-packs/hero-pack-tomato-basil-soup.png" loading="eager" alt="Tomato and Basil Soup pack" />
                                     <img class="hero-pack hero-pack--soup" src="newImgClientShared/hero-packs/hero-pack-creamy-mushroom-soup.png" loading="eager" alt="Creamy Mushroom Soup pack" />
                                 </div>
@@ -1864,8 +1849,7 @@ position: sticky !important;
   .hero-pack--pasta,
   .hero-pack--soup,
   .hero-pack--ramen,
-  .hero-pack--center,
-  #hero-pack-soup-1 {
+  .hero-pack--center {
     display: block !important;
     height: auto !important;
     margin: 0 !important;
@@ -1969,6 +1953,43 @@ position: sticky !important;
   .hero-product-group--ramen .hero-pack {
     width: 88px !important;
     max-width: 29vw !important;
+  }
+}
+</style>
+
+
+<style id="brothsmen-soup-pack-size-normalization">
+/* Keep every soup pack at the same rendered height on every viewport.
+   Width remains intrinsic, so artwork is never stretched or distorted. */
+.hero-product-group--soups .hero-pack-group > img.hero-pack {
+  width: auto !important;
+  height: clamp(142px, 13.68vw, 215px) !important;
+  max-width: none !important;
+  max-height: none !important;
+  object-fit: contain !important;
+  object-position: center bottom !important;
+  align-self: flex-end !important;
+}
+
+@media (max-width: 1120px) and (min-width: 992px) {
+  .hero-product-group--soups .hero-pack-group > img.hero-pack {
+    width: auto !important;
+    height: clamp(132px, 13.04vw, 180px) !important;
+  }
+}
+
+@media (max-width: 991px) and (min-width: 601px) {
+  .hero-product-group--soups .hero-pack-group > img.hero-pack {
+    width: auto !important;
+    height: clamp(142px, 27.9vw, 198px) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-product-group--soups .hero-pack-group > img.hero-pack {
+    width: auto !important;
+    height: clamp(104px, 30.4vw, 117px) !important;
+    transform: none !important;
   }
 }
 </style>
